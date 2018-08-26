@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
 <meta charset="UTF-8">
-<title>工作坊招新主页</title>
+<title>工作坊招新</title>
 
 <script src="js/jrj6out.js"></script>
-<script>try{Typekit.load({ async: false });}catch(e){}</script>
+<script>
+  try{Typekit.load({ async: false });}catch(e){}
+</script>
 
 <style>
   body {
@@ -34,8 +36,8 @@ h1 {
 }
 @media screen and (min-width: 860px) {
   h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -95,6 +97,7 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   transition: .15s ease-out;
+  font-size: 20px;
 }
 
 .x-mark {
@@ -164,8 +167,8 @@ h1 {
 }
 @media screen and (min-width: 860px) {
   .sky-container__left h2, .sky-container__right h2 {
-    font-size: 72px;
-    line-height: 68px;
+    font-size: 62px;
+    line-height: 60px;
   }
 }
 .sky-container__left {
@@ -237,16 +240,16 @@ h1 {
 .enterhtml {
   text-decoration: none;
   color: grey;
-  font-size: 60px;
+  font-size: 65px;
   background-color: white;
   border: 0px;
   display: block;
 }
 .enterhtml:hover {
-  font-size: 62px;
   background-color: grey;
   color: white;
 }
+
 
 </style>
 
@@ -254,7 +257,27 @@ h1 {
 
 </head>
 
-<body>
+<body onload="getNowDate()">
+
+<script type="text/javascript">
+  function getNowDate() {
+    var date = new Date();
+    var year = date.getFullYear() // 年
+    var month = date.getMonth() + 1; // 月
+    var day  = date.getDate(); // 日
+    // 给一位数数据前面加 “0”
+    if (month >= 1 && month <= 9) {
+     month = "0" + month;
+    }
+    if (day >= 0 && day <= 9) {
+     day = "0" + day;
+    }
+    document.getElementById("nowyear").innerHTML = year ;
+    document.getElementById("nowmonth").innerHTML = month ;
+    document.getElementById("nowday").innerHTML = day ;
+  }
+</script>
+
 <div class="x-mark">
 	<div class="container">
 		<div class="left"></div>
@@ -264,7 +287,7 @@ h1 {
 <div class="intro-container">
 	
 	<h1>欢迎大家来到创新创业工作坊</h1>
-  <h1>来跟我们一起进入这个奇妙的世界</h1>
+  	<h1>来跟我们一起进入这个奇妙的世界</h1>
 
 	<div class="button shift-camera-button">
 		<div class="border">
@@ -280,25 +303,18 @@ h1 {
 			WIE
 		</h2>
 		<h2 class="resurrection">
-			GXGYGZF	
+			CXCYGZF	
 		</h2>
 	</div>
 	<div class="text-left sky-container__right">
-		<h2 class="08">
-			08
-		</h2>
-		<h2 class="thirty-one">
-			31
-		</h2>
-		<h2 class="2016">
-			2016
-		</h2>
+		<h2 class="08" id="nowyear"></h2>
+		<h2 class="thirty-one" id="nowmonth"></h2>
+		<h2 class="2016" id="nowday"></h2>
     <button>
-      <a href="工作坊招新.html" class="enterhtml"><b>ENTER</b></a>
+      <a href="../工作坊招新/工作坊招新.html" class="enterhtml"><b>ENTER</b></a>
     </button>
 	</div>
 </div>
-
 
 <script src='js/jquery.min.js'></script>
 <script src='js/TweenMax.min.js'></script>
