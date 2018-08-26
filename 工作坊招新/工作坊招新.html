@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="工作坊招新.css">
+	<link type="text/css" rel="stylesheet" href="图片轮播1.css">
+	<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0">
+	<script type="text/javascript" src="工作坊招新.js"></script>
+	<title>工作坊招新</title>
+
+</head>
+<body>
+	<div id="daohangtiao">
+		<div id="tubiao">
+			<img src="WIE.png" id="WIE">
+		</div>
+		<div id="listall">
+			<!--一级菜单-->
+			<ul>
+				<li><a href="#part1" class="list" id="list1">首页</a></li>
+				<li><a href="#part2" class="list" id="list2">工作坊介绍</a></li>
+				<li><a href="#part3" class="list" id="list3">SME杯介绍</a></li>
+				<li><a href="#part4" class="list" id="list4">方向介绍</a>
+					<!--二级菜单-->
+					<ul>
+						<li><a href="#part4" class="secondList">硬件</a></li>
+						<li><a href="#part4" class="secondList">嵌入式</a></li>
+						<li><a href="#part4" class="secondList">web前端</a></li>
+						<li><a href="#part4" class="secondList">数据科学</a></li>
+					</ul>
+				</li>
+				<li><a href="#part5" class="list" id="list5">萌新N连</a></li>
+			</ul>
+		</div>
+	</div>
+<!--part1-->
+    <div class="part" id="part1">
+		<div id="imgWIE">
+			<img src="WIE2.png" id="WIE2" width="500px">
+		</div>
+		<br>
+		<h1 class="wenzi" id="wenzi1">WORKSHOP OF INNOVATION AND ENTREPRENESHIP</h1>
+		<h1 class="wenzi" id="wenzi2">创新创业工作坊·经济与管理学院·电子科技大学</h1>
+    </div>
+<!--part2-->
+    <div class="part" id="part2">
+    	<img src="part2.png">
+    	<div id="part2_1">
+    		<p>创新创业工作坊</p>
+    	</div>
+    	<div id="part2_2">
+	    	<div id="part2_2-1">
+	        	<p style="margin-top: 17px;">历史悠久</p>
+	        	<p style="font-size: 30px;font-weight: normal;margin-top: 10px;">开始创建于2009年</p>
+	        </div>
+	        <div id="part2_2-2">
+	        	<p style="margin-top: 17px;">设备齐全</p>
+	        	<p style="font-size: 30px;font-weight: normal;margin-top: 10px;">备有各种仪器设备</p>
+	        </div>
+	    </div>
+	    <div id="part2_3">
+	        <div id="part2_3-1">
+	        	<p style="margin-top: 17px;">位置优越</p>
+	        	<p style="font-size: 30px;font-weight: normal;margin-top: 10px;">坐落于经管楼A404</p>
+	        </div>
+	        <div id="part2_3-2">
+	        	<p style="margin-top: 17px;">技术开发</p>
+	        	<p style="font-size: 30px;font-weight: normal;margin-top: 10px;">多种方向供你学习</p>
+	        </div>
+	    </div>
+    </div>
+<!--part3-->
+	<div class="part" id="part3">
+		<div class="jiao" id="jiao1"><img src="硬件.png"></div>
+		<div class="jiao" id="jiao2"><img src="嵌入式.png"></div>
+		<h2 id="h2-1">零门槛·零基础·零起点</h2>
+		<div class="part3-ud" id="part3-up">
+			<div id="up-inner">
+				<img src="part3-l.png" onclick="SME()">
+				<h1 onclick="SME()">第二届·SME杯</h1>
+				<img src="part3-r.png" onclick="SME()">
+			</div>
+		</div>
+		<div class="part3-ud" id="part3-down">
+			<h1 onclick="SME()">电子设计暨互联网解决方案大赛</h1>
+		</div>
+		<h2 id="h2-2">报名便捷·面向广泛·题目多样</h2>
+		<div class="jiao" id="jiao3"><img src="web前端.png"></div>
+		<div class="jiao" id="jiao4"><img src="数据科学.png"></div>
+	</div>
+<!--part4-->
+	<div id="part4">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-slide-center none-effect" id="part4_1">
+					<div class="part4-inner" id="part4-in1">
+						<div class="part4-line"></div>
+						<div class="part4-timu">硬件</div>
+						<p>
+							你有听说过全国大学生电子设计大赛吗？你有听说过晶体管、二极管和运算放大器吗？如果你还不知道的话，那就加入我们硬件组吧，在这里你可以学到很多相关知识，如果已经很了解这些了，那么也来我们硬件组吧，你可以在这里如鱼得水。
+						</p>
+						<p>
+							入门的时候大部分工作是在焊板子，但是往后期发展其实更多的是电路的设计以及方案的设计。一个小小的电路板能实现很多功能，可以稳压，可以放大，可以实现很多可能。
+						</p>
+					</div>
+					<div class="layer-mask"></div>
+				</div>
+				<div class="swiper-slide" id="part4_2">
+					<div class="part4-inner" id="part4-in2">
+						<div class="part4-line"></div>
+						<div class="part4-timu">嵌入式</div>
+						<p>
+							你是否想制作一个光立方送给喜欢的人？你是否想制造自己的多功能小车？你是否想拥有自己的电子密码锁，无人机，遥控器……
+						</p>
+						<p>
+							这一切的背后都是嵌入式的功劳，从点亮一个LED灯到让小车运动，从空调遥控器到无人机，嵌入式无处不在。你可以制作自己的语音机器人，你也可以制作自己的微波炉。嵌入式的世界便是这五彩斑斓的世界！
+						</p>
+					</div>
+					<div class="layer-mask"></div>
+				</div>
+				<div class="swiper-slide" id="part4_3">
+					<div class="part4-inner" id="part4-in3">
+						<div class="part4-line"></div>
+						<div class="part4-timu">web前端</div>
+						<p>
+							所谓web前端，说的简单且通俗易懂一点，就是写网页，或者说是画网页，无论是你常看到的hao123或者是腾讯网，搜狐网等等各种的你所看到的界面图形文字之类的元素所组成的就是网页。
+						</p>
+						<p>
+							web前端技术就是通过几种编程语言的相互配合融洽来做出一个网页来，这些编程语言不像C语言、C++什么的，它相对来说更简单易懂，而且可以随时查看自己做出来的网页的样子，做起来就像绘画一样，趣味性很强。
+						</p>
+					</div>
+					<div class="layer-mask"></div>
+				</div>
+				<div class="swiper-slide" id="part4_4">
+					<div class="part4-inner" id="part4-in4">
+						<div class="part4-line"></div>
+						<div class="part4-timu">数据科学</div>
+						<p>
+							数据科学（Data Science）以数据挖掘为基础，逐渐深入到大数据、人工智能与机器学习领域。
+						<p>
+							简单来讲，数据科学就是和不同类型，不同问题的数据打交道，和图像数据打交道就是计算机视觉，和文本打交道就是自然语言处理。所用方法大多来自机器学习、统计学以及深度学习。
+						</p>
+						<p>
+							如果你想知道网易云音乐是如何进行音乐推荐的，想知道Open AI是如何在dota2比赛中战胜人类顶级职业玩家的，如果你还想自主实现机器翻译以及信息抽提，那么数据科学是你不得不接触并深入研究的。
+						</p>
+					</div>
+					<div class="layer-mask"></div>
+				</div>
+			</div>
+			<div class="button">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="图片轮播1.js"></script>
+
+	<div class="part" id="part4-2" style="height: 1000px;background-color: black;color: white;font-size: 50px;font-weight: bold;"></div>
+<!--part5-->
+	<div class="part" id="part5">
+		<div id="QA">Q&A</div>
+		<div class="question" id="question1">
+			<p class="mengxin" id="mengxin1">
+				<span class="mengxinwen">萌新</span>
+				<span style="font-size: 30px;">：</span>
+				请问在工作坊我能学到什么呢？
+			</p>
+			<br>
+			<p class="dalao" id="dalao1">
+				<span class="dalaoshu">大佬鼠</span>
+				<span style="font-size: 30px;">：</span>
+				工作坊是一个搞技术的地方，可以类比成电工以及信通学院的科协以及计算机学院工作室的角色，我们也和其他学院的科协以及工作室有着良好的关系。工作坊开设有电子设计和互联网解决方案两大方向，其中电子设计方向下有硬件和嵌入式两个方面，互联网解决方案方向下有web前端和数据科学两个方向，你可以自行选择自己喜欢的方向进行学习。
+			</p>
+		</div>
+		<div class="question" id="question2">
+			<p class="mengxin" id="mengxin2">
+				<span class="mengxinwen">萌新</span>
+				<span style="font-size: 30px;">：</span>
+				我对专业知识都不了解，不知道该学习哪个方向怎么办？
+			</p>
+			<br>
+			<p class="dalao" id="dalao2">
+				<span class="dalaoshu">大佬鼠</span>
+				<span style="font-size: 30px;">：</span>
+				我们会在前期对各个方向进行一个讲解，帮助同学们了解各个方向，选择自己所感兴趣的方向进行学习，同时，工作坊内有各个方向的学长学姐，有问题也可以直接向他们询问。
+			</p>
+		</div>
+		<div class="question" id="question3">
+			<p class="mengxin" id="mengxin3">
+				<span class="mengxinwen">萌新</span>
+				<span style="font-size: 30px;">：</span>
+				SME杯是个什么样的比赛呢？我没有任何的基础怎么办？
+			</p>
+			<br>
+			<p class="dalao" id="dalao3">
+				<span class="dalaoshu">大佬鼠</span>
+				<span style="font-size: 30px;">：</span>
+				SME杯是每年新生入学时工作坊例行举办的针对大一新生的一个技术方面的比赛，每个新生基本上都是零基础，我们会给出每个方向的学习指导，同时比赛期间有问题也可以向工作坊的大佬们询问。
+			</p>
+		</div>
+		<div class="question" id="question4">
+			<p class="mengxin" id="mengxin4">
+				<span class="mengxinwen">萌新</span>
+				<span style="font-size: 30px;">：</span>
+				那要怎样才能进入工作坊呢？
+			</p>
+			<br>
+			<p class="dalao" id="dalao4">
+				<span class="dalaoshu">大佬鼠</span>
+				<span style="font-size: 30px;">：</span>
+				开学的时候我们会进行宣讲，同时发放纸质版报名表，同时，我们也会把电子版报名表发到你们新生群当中，只要在截止时间前交上来就算报名成功。下面有工作坊招新群的二维码，扫码进群可以及时收到最新消息。
+			</p>
+		</div>
+	</div>
+<!--part6-->
+	<div class="part" id="part6">
+		<img src="格言.png">
+	</div>
+<!--二维码-->
+	<div class="erweima">
+		<img src="创新创业工作坊招新群群聊二维码.png">
+		<img src="微信公众号二维码.png">
+	</div>
+<!--底部-->
+	<div class="part" id="part7">
+		<span>Copyright</span>
+		<img src="part7.png">
+		<span>2018 Workshop of Innovation and Entrepreneship</span>
+	</div>
+</body>
+</html>

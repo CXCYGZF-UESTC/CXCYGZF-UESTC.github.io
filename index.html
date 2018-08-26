@@ -1,325 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>工作坊招新</title>
-
-<script src="js/jrj6out.js"></script>
-<script>
-  try{Typekit.load({ async: false });}catch(e){}
-</script>
-
-<style>
-  body {
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-}
-
-.intro-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-}
-
-h1 {
-  font-family: 'brandon-grotesque', sans-serif;
-  font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 0;
-  font-size: 20px;
-}
-@media screen and (min-width: 860px) {
-  h1 {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
-.fancy-text {
-  font-family: "adobe-garamond-pro",sans-serif;
-  font-style: italic;
-  letter-spacing: 1px;
-  margin-bottom: 17px;
-}
-
-.button {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'brandon-grotesque', sans-serif;
-  text-transform: uppercase;
-  min-width: 200px;
-  margin-top: 30px;
-}
-.button:hover .border {
-  box-shadow: 0px 0px 10px 0px white;
-}
-.button:hover .border .left-plane, .button:hover .border .right-plane {
-  transform: translateX(0%);
-}
-.button:hover .text {
-  color: #121212;
-}
-.button .border {
-  border: 1px solid white;
-  transform: skewX(-20deg);
-  height: 32px;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  transition: .10s ease-out;
-}
-.button .border .left-plane, .button .border .right-plane {
-  position: absolute;
-  background: white;
-  height: 32px;
-  width: 100px;
-  transition: .15s ease-out;
-}
-.button .border .left-plane {
-  left: 0;
-  transform: translateX(-100%);
-}
-.button .border .right-plane {
-  right: 0;
-  transform: translateX(100%);
-}
-.button .text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .15s ease-out;
-  font-size: 20px;
-}
-
-.x-mark {
-  right: 10px;
-  top: 10px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-}
-.x-mark:hover .right {
-  transform: rotate(-45deg) scaleY(1.2);
-}
-.x-mark:hover .left {
-  transform: rotate(45deg) scaleY(1.2);
-}
-.x-mark .container {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-.x-mark .left, .x-mark .right {
-  width: 2px;
-  height: 20px;
-  background: white;
-  position: absolute;
-  border-radius: 3px;
-  transition: .15s ease-out;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-.x-mark .right {
-  transform: rotate(-45deg);
-}
-.x-mark .left {
-  transform: rotate(45deg);
-}
-
-.sky-container {
-  position: absolute;
-  color: white;
-  text-transform: uppercase;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-  top: 2%;
-  text-align: center;
-  opacity: 0;
-}
-@media screen and (min-width: 860px) {
-  .sky-container {
-    top: 18%;
-    right: 12%;
-    left: auto;
-  }
-}
-.sky-container__left, .sky-container__right {
-  display: inline-block;
-  vertical-align: top;
-  font-weight: bold;
-}
-.sky-container__left h2, .sky-container__right h2 {
-  font-family: 'brandon-grotesque', sans-serif;
-  font-size: 26px;
-  line-height: 26px;
-  margin: 0;
-}
-@media screen and (min-width: 860px) {
-  .sky-container__left h2, .sky-container__right h2 {
-    font-size: 62px;
-    line-height: 60px;
-  }
-}
-.sky-container__left {
-  margin-right: 5px;
-}
-.sky-container .thirty-one {
-  letter-spacing: 4px;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.twitter:hover a {
-  transform: rotate(-45deg) scale(1.05);
-}
-.twitter:hover i {
-  color: #21c2ff;
-}
-.twitter a {
-  bottom: -40px;
-  right: -75px;
-  transform: rotate(-45deg);
-}
-.twitter i {
-  bottom: 7px;
-  right: 7px;
-  color: #00ACED;
-}
-
-.social-icon a {
-  position: absolute;
-  background: white;
-  color: white;
-  box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  width: 150px;
-  height: 80px;
-  transform-origin: 50% 50%;
-  transition: .15s ease-out;
-}
-.social-icon i {
-  position: absolute;
-  pointer-events: none;
-  z-index: 1000;
-  transition: .15s ease-out;
-}
-
-.youtube:hover a {
-  transform: rotate(45deg) scale(1.05);
-}
-.youtube:hover i {
-  color: #ec4c44;
-}
-.youtube a {
-  bottom: -40px;
-  left: -75px;
-  transform: rotate(45deg);
-}
-.youtube i {
-  bottom: 7px;
-  left: 7px;
-  color: #E62117;
-}
-.enterhtml {
-  text-decoration: none;
-  color: grey;
-  font-size: 65px;
-  background-color: white;
-  border: 0px;
-  display: block;
-}
-.enterhtml:hover {
-  background-color: grey;
-  color: white;
-}
-
-
-</style>
-
-<script src="js/prefixfree.min.js"></script>
-
+    <meta charset="UTF-8">
+    <title>工作坊招新</title>
+    <script src="js/jrj6out.js"></script>
+    <script>
+    try { Typekit.load({ async: false }); } catch (e) {}
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body onload="getNowDate()">
-
-<script type="text/javascript">
-  function getNowDate() {
-    var date = new Date();
-    var year = date.getFullYear() // 年
-    var month = date.getMonth() + 1; // 月
-    var day  = date.getDate(); // 日
-    // 给一位数数据前面加 “0”
-    if (month >= 1 && month <= 9) {
-     month = "0" + month;
+    <script type="text/javascript">
+    function getNowDate() {
+        var date = new Date();
+        var year = date.getFullYear() // 年
+        var month = date.getMonth() + 1; // 月
+        var day = date.getDate(); // 日
+        // 给一位数数据前面加 “0”
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (day >= 0 && day <= 9) {
+            day = "0" + day;
+        }
+        document.getElementById("nowyear").innerHTML = year;
+        document.getElementById("nowmonth").innerHTML = month;
+        document.getElementById("nowday").innerHTML = day;
     }
-    if (day >= 0 && day <= 9) {
-     day = "0" + day;
-    }
-    document.getElementById("nowyear").innerHTML = year ;
-    document.getElementById("nowmonth").innerHTML = month ;
-    document.getElementById("nowday").innerHTML = day ;
-  }
-</script>
-
-<div class="x-mark">
-	<div class="container">
-		<div class="left"></div>
-		<div class="right"></div>
-	</div>
-</div>
-<div class="intro-container">
-	
-	<h1>欢迎大家来到创新创业工作坊</h1>
-  	<h1>来跟我们一起进入这个奇妙的世界</h1>
-
-	<div class="button shift-camera-button">
-		<div class="border">
-			<div class="left-plane"></div>
-			<div class="right-plane"></div>
-		</div>	
-		<div class="text">To The Stars</div>
-	</div>
-</div>
-<div class="sky-container">
-	<div class="text-right sky-container__left">
-		<h2 class="portfolio">
+    </script>
+    <div class="x-mark">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div class="intro-container">
+        <h1>欢迎大家来到创新创业工作坊</h1>
+        <h1>来跟我们一起进入这个奇妙的世界</h1>
+        <div class="button shift-camera-button">
+            <div class="border">
+                <div class="left-plane"></div>
+                <div class="right-plane"></div>
+            </div>
+            <div class="text">To The Stars</div>
+        </div>
+    </div>
+    <div class="sky-container">
+        <div class="text-right sky-container__left">
+            <h2 class="portfolio">
 			WIE
 		</h2>
-		<h2 class="resurrection">
+            <h2 class="resurrection">
 			CXCYGZF	
 		</h2>
-	</div>
-	<div class="text-left sky-container__right">
-		<h2 class="08" id="nowyear"></h2>
-		<h2 class="thirty-one" id="nowmonth"></h2>
-		<h2 class="2016" id="nowday"></h2>
-    <button>
-      <a href="../工作坊招新/工作坊招新.html" class="enterhtml"><b>ENTER</b></a>
-    </button>
-	</div>
-</div>
-
-<script src='js/jquery.min.js'></script>
-<script src='js/TweenMax.min.js'></script>
-<script src='js/three.min.js'></script>
-<script src="js/index.js"></script>
-
+        </div>
+        <div class="text-left sky-container__right">
+            <h2 class="08" id="nowyear"></h2>
+            <h2 class="thirty-one" id="nowmonth"></h2>
+            <h2 class="2016" id="nowday"></h2>
+            <button>
+                <a href="工作坊招新/工作坊招新.html" class="enterhtml" style="font-family: 方正清刻本悦宋简体;letter-spacing: 5px;"><b>ENTER</b></a>
+            </button>
+        </div>
+    </div>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/TweenMax.min.js'></script>
+    <script src='js/three.min.js'></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
