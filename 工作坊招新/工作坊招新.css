@@ -110,6 +110,7 @@ html,body {
 @media screen and (max-width: 900px) {
 	#listall {
 		letter-spacing: 0;
+		font-size: 12px;
 	}
 	#listall ul li {
 		width: 20%;
@@ -284,7 +285,7 @@ html,body {
 		width: 60%;
 	}
 	#part2_1 {
-		font-size: 45px;
+		font-size: 40px;
 		line-height: 60px;
 	}
 	#part2_2 {
@@ -417,10 +418,10 @@ html,body {
 @media screen and (max-width: 900px) {
 	#h2-1 {
 		font-size: 25px;
-		letter-spacing: 5px;
+		letter-spacing: 4px;
 	}
 	#h2-2 {
-		font-size: 21px;
+		font-size: 20px;
 		letter-spacing: 3px;
 	}
 	.jiao {
@@ -428,12 +429,12 @@ html,body {
 		height: auto;
 	}
 	#part3 h1 {
-		font-size: 25px;
+		font-size: 20px;
 		letter-spacing: 2px;
 		margin: 0 -10px;
 	}
 	#up-inner img {
-		width: 90px;
+		width: 70px;
 		margin: 7px 0;
 	}
 	.part3-ud {
