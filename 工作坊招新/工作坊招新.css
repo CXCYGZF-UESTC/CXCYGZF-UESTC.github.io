@@ -33,7 +33,15 @@ html,body {
 	height: 35px;
 	margin: 5px;
 }
-
+@media screen and (max-width: 900px) {
+	#daohangtiao {
+		opacity: 1;
+	}
+	#tubiao {
+		visibility: hidden;
+		width: 0;
+	}
+}
 /*名为listall的div元素*/
 #listall {
 	background-color: #eee;
@@ -99,7 +107,26 @@ html,body {
 	background-color: grey;
 	font-weight: bold;
 }
-
+@media screen and (max-width: 900px) {
+	#listall {
+		letter-spacing: 0;
+	}
+	#listall ul li {
+		width: 20%;
+	}
+	.list {
+		padding: 0;
+	}
+	#listall ul li ul {
+		visibility: hidden;
+	}
+	#listall ul li ul li {
+		visibility: hidden;
+	}
+	.secondList {
+		visibility: hidden;
+	}
+}
 /*part1*/
 #part1 {
 	background-image: url(part1.png);
@@ -113,45 +140,38 @@ html,body {
 	font-family: 方正清刻本悦宋简体;
 	font-weight:bold;
 }
-#imgWIE {
+#WIE2 {
 	padding-top: 300px;
-	transition:opacity 0.5s;
-	-moz-transition:opacity 0.5s;
-	-webkit-transition:opacity 0.5s;
-	-o-transition:opacity 0.5s;
-	opacity: 0;
-}
-#part1:hover #imgWIE {
-	opacity: 1;
+	width: 30%;
 }
 #wenzi1,#wenzi2 {
 	color: #fff;
 	font-family: 方正清刻本悦宋简体;
 	font-weight:bold;
 }
-#wenzi1 {
-	opacity: 0;
-    margin-top: 20px;
-    font-size: 29px;
-	transition:opacity 1s;
-	-moz-transition:opacity 1s;
-	-webkit-transition:opacity 1s;
-	-o-transition:opacity 1s;
-}
 #wenzi2 {
-	opacity: 0;
-    font-size: 20px;
-    letter-spacing: 10px;
-	transition:opacity 1.5s;
-	-moz-transition:opacity 1.5s;
-	-webkit-transition:opacity 1.5s;
-	-o-transition:opacity 1.5s;
+    margin-top: 20px;
+    font-size: 25px;
+    letter-spacing: 5px;
 }
-#part1:hover #wenzi1 {
-	opacity: 1;
+#wenzi1 {
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 3px;
 }
-#part1:hover #wenzi2 {
-	opacity: 1;
+@media screen and (max-width: 900px) {
+	#WIE2 {
+		width: 55%;
+	}
+	#wenzi2 {
+		font-size: 10px;
+		letter-spacing: 3px;
+	}
+	#wenzi1 {
+		font-size: 14px;
+		letter-spacing: 1px;
+		margin-top: 5px;
+	}
 }
 /*part2*/
 #part2 {
@@ -167,7 +187,7 @@ html,body {
 	overflow: hidden;
 }
 #part2 img {
-	height: 170px;
+	width: 40%;
 	position: absolute;
 	top: 300px;
 	right: 0px;
@@ -182,12 +202,12 @@ html,body {
 	-webkit-transition:opacity 1s;
 	-o-transition:opacity 1s;
 }
+
 #part2:hover img {
 	opacity: 1;
 }
 #part2_1 {
     font-size: 65px;
-    width: 500px;
     line-height: 80px;
 	opacity: 0;
 	transition:opacity 1s;
@@ -198,10 +218,9 @@ html,body {
 #part2:hover #part2_1 {
 	opacity: 1;
 }
+
 #part2_2 {
 	width: 60%;
-	font-size: 35px;
-	margin-top: 80px;
 	overflow: auto;
 	opacity: 0;
 	transition:opacity 2s;
@@ -215,15 +234,25 @@ html,body {
 #part2_2-1 {
     float: left;
     border-top: #FF8902 solid 2px;
+    margin-top: 80px;
 }
 #part2_2-2 {
     float: right;
     margin-right: 15%;
     border-top: #FF8902 solid 2px;
+    margin-top: 80px;
+}
+.class-1 {
+	margin-top: 17px;
+	font-size: 35px;
+}
+.class-2 {
+	font-size: 30px;
+	font-weight: normal;
+	margin-top: 10px;
 }
 #part2_3 {
 	width: 60%;
-	font-size: 35px;
 	overflow: auto;
 	opacity: 0;
 	transition:opacity 3s;
@@ -244,6 +273,48 @@ html,body {
     margin-top: 60px;
     margin-right: 15%;
     border-top: #FF8902 solid 2px;
+}
+@media screen and (max-width: 900px) {
+	#part2 {
+		padding-top: 100px;
+		padding-left: 50px;
+	}
+	#part2 img {
+		top: 100px;
+		width: 60%;
+	}
+	#part2_1 {
+		font-size: 45px;
+		line-height: 60px;
+	}
+	#part2_2 {
+		width: 500px;
+		letter-spacing: 5px;
+	}
+	#part2_3 {
+		width: 500px;
+		letter-spacing: 5px;
+	}
+	#part2_2-1 {
+		margin-top: 70px;
+	}
+	#part2_2-2 {
+		float: left;
+		margin-top: 45px;
+	}
+	#part2_3-1 {
+		margin-top: 45px;
+	}
+	#part2_3-2 {
+		float: left;
+		margin-top: 45px;
+	}
+	.class-1 {
+		font-size: 35px;
+	}
+	.class-2 {
+		font-size: 27px;
+	}
 }
 /*part3*/
 #part3 {
@@ -268,8 +339,8 @@ html,body {
 #part3:hover .jiao {
 	opacity: 1;
 }
-.jiao img {
-	height: 370px;
+.jiao {
+	height: 40%;
 }
 #jiao1 {
 	top: 0;
@@ -293,8 +364,6 @@ html,body {
 }
 #part3 h2 {
 	color: #FF8902;
-	font-size: 30px;
-	letter-spacing: 15px;
 	position: absolute;
 	line-height: 200px;
 	left: 0;
@@ -309,9 +378,13 @@ html,body {
 	opacity: 1;
 }
 #h2-1 {
+	font-size: 30px;
+	letter-spacing: 15px;
 	top: 0;
 }
 #h2-2 {
+	font-size: 30px;
+	letter-spacing: 15px;
 	bottom: 0;
 }
 .part3-ud {
@@ -323,6 +396,7 @@ html,body {
 	-moz-transition:opacity 3s;
 	-webkit-transition:opacity 3s;
 	-o-transition:opacity 3s;
+	margin: 20px 0;
 }
 #part3:hover .part3-ud {
 	opacity: 1;
@@ -339,6 +413,32 @@ html,body {
 	display: inline;
 	width: 210px;
 	margin: 15px 0;
+}
+@media screen and (max-width: 900px) {
+	#h2-1 {
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
+	#h2-2 {
+		font-size: 21px;
+		letter-spacing: 3px;
+	}
+	.jiao {
+		width: 50%;
+		height: auto;
+	}
+	#part3 h1 {
+		font-size: 25px;
+		letter-spacing: 2px;
+		margin: 0 -10px;
+	}
+	#up-inner img {
+		width: 90px;
+		margin: 7px 0;
+	}
+	.part3-ud {
+		margin: 0;
+	}
 }
 /*part4*/
 #part4 {
@@ -379,6 +479,18 @@ html,body {
 	line-height: 27px;
 	letter-spacing: 5px;
 	margin: 15px 0;
+}
+@media screen and (max-width: 900px) {
+	#part4 {
+		padding-top: 0px;
+	}
+	.part4-inner {
+		margin: 50px 20px;
+	}
+	.part4-timu {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
 }
 /*part5*/
 #part5 {
@@ -490,20 +602,79 @@ html,body {
 #part5:hover .dalao {
 	opacity: 1;
 }
+@media screen and (max-width: 900px) {
+	#part5 {
+		padding: 150px 50px;
+		height: auto;
+	}
+	#QA {
+		font-size: 50px;
+		letter-spacing: 10px;
+		width: 120px;
+		margin-bottom: 50px;
+	}
+	.mengxin {
+		line-height: 30px;
+	}
+	.dalao {
+		line-height: 30px;
+	}
+	.mengxinwen {
+		font-size: 30px;
+	}
+	.dalaoshu {
+		font-size: 23px;
+	}
+}
 /*part6*/
 #part6 {
-	background-color: black;
+	background-image: url(格言.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: auto;
+	padding: 200px 200px 0 200px;
 }
-#part6 img{
-	width: 100%;
+#part6 p{
+	color: #E2F0D9;
+	font-family: Bodoni MT Black;
 	opacity: 0;
 	transition:opacity 2s;
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
 }
-#part6:hover img {
+#geyan {
+	font-size: 50px;
+	line-height: 70px;
+}
+.yinhao {
+	font-size: 40px;
+	margin-bottom: -20px;
+}
+#xiayinhao {
+	float: right;
+}
+#Hegel {
+	font-size: 50px;
+	line-height: 70px;
+	clear: right;
+}
+#part6:hover p {
 	opacity: 1;
+}
+@media screen and (max-width: 900px) {
+	#part6 {
+		padding: 50px 30px 20px 30px; 
+	}
+	#geyan {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	#Hegel {
+		font-size: 30px;
+		line-height: 35px;
+	}
 }
 /*二维码*/
 .erweima {
@@ -515,6 +686,12 @@ html,body {
 	height: 200px;
 	margin: 0 50px 20px 50px;
 }
+@media screen and (max-width: 900px) {
+	.erweima img {
+		height: 120px;
+		margin: 0 20px;
+	}
+}
 /*底部*/
 #part7 {
 	text-align: center;
@@ -524,8 +701,19 @@ html,body {
 	clear: both;
 	line-height: 30px;
 	letter-spacing: 2px;
+	padding-bottom: 20px;
 }
 #part7 img {
 	height: 25px;
 	margin-bottom: -5px;
+}
+@media screen and (max-width: 900px) {
+	#part7 {
+		font-size: 15px;
+		line-height: 20px;
+		padding-bottom: 10px;
+	}
+	#part7 img {
+		height: 20px;
+	}
 }
