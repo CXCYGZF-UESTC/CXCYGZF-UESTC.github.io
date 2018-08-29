@@ -27,8 +27,8 @@ function SME() {
 
 function appear_1() {
 	document.getElementById('WIE2').style.opacity = 1;
-	setTimeout("document.getElementById('wenzi1').style.opacity = 1",500);
-	setTimeout("document.getElementById('wenzi2').style.opacity = 1",1000);
+	document.getElementById('wenzi1').style.opacity = 1;
+	document.getElementById('wenzi2').style.opacity = 1;
 }
 function appear_2() {
 	var getId = document.getElementById('part2');
@@ -36,8 +36,8 @@ function appear_2() {
 	if (getTopnumber<=100) {
 		document.getElementById('part2-img').style.opacity = 1;
 		document.getElementById('part2_1').style.opacity = 1;
-		setTimeout("document.getElementById('part2_2').style.opacity = 1",500);
-		setTimeout("document.getElementById('part2_3').style.opacity = 1",1000);
+		document.getElementById('part2_2').style.opacity = 1;
+		document.getElementById('part2_3').style.opacity = 1;
 	}
 }
 function appear_3() {
@@ -48,8 +48,10 @@ function appear_3() {
 		document.getElementById('jiao2').style.opacity = 1;
 		document.getElementById('jiao3').style.opacity = 1;
 		document.getElementById('jiao4').style.opacity = 1;
-		setTimeout("document.getElementById('h2-1').style.opacity = 1,document.getElementById('h2-2').style.opacity = 1",500);
-		setTimeout("document.getElementById('part3-up').style.opacity = 1,document.getElementById('part3-down').style.opacity = 1",1000);
+		document.getElementById('h2-1').style.opacity = 1;
+		document.getElementById('h2-2').style.opacity = 1;
+		document.getElementById('part3-up').style.opacity = 1;
+		document.getElementById('part3-down').style.opacity = 1;
 	}
 }
 function appear_4() {
@@ -65,14 +67,14 @@ function appear_5() {
 	if (getTopnumber<=100) {
 		document.getElementById('QA').style.opacity = 1;
 		document.getElementById('part2_1').style.opacity = 1;
-		setTimeout("document.getElementById('mengxin1').style.opacity = 1",500);
-		setTimeout("document.getElementById('dalao1').style.opacity = 1",1000);
-		setTimeout("document.getElementById('mengxin2').style.opacity = 1",1500);
-		setTimeout("document.getElementById('dalao2').style.opacity = 1",2000);
-		setTimeout("document.getElementById('mengxin3').style.opacity = 1",2500);
-		setTimeout("document.getElementById('dalao3').style.opacity = 1",3000);
-		setTimeout("document.getElementById('mengxin4').style.opacity = 1",3500);
-		setTimeout("document.getElementById('dalao4').style.opacity = 1",4000);
+		document.getElementById('mengxin1').style.opacity = 1;
+		document.getElementById('dalao1').style.opacity = 1;
+		document.getElementById('mengxin2').style.opacity = 1;
+		document.getElementById('dalao2').style.opacity = 1;
+		document.getElementById('mengxin3').style.opacity = 1;
+		document.getElementById('dalao3').style.opacity = 1;
+		document.getElementById('mengxin4').style.opacity = 1;
+		document.getElementById('dalao4').style.opacity = 1;
 	}
 }
 function appear_6() {

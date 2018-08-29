@@ -145,10 +145,10 @@ html,body {
 	padding-top: 300px;
 	width: 30%;
 	opacity: 0;
-	transition:opacity 2s;
-	-moz-transition:opacity 2s;
-	-webkit-transition:opacity 2s;
-	-o-transition:opacity 2s;
+	transition-duration:opacity 2s;
+	-moz-transition-duration:opacity 2s;
+	-webkit-transition-duration:opacity 2s;
+	-o-transition-duration:opacity 2s;
 }
 #wenzi1,#wenzi2 {
 	color: #fff;
@@ -164,6 +164,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
 }
 #wenzi2 {
     font-size: 27px;
@@ -174,6 +178,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
 }
 @media screen and (max-width: 900px) {
 	#WIE2 {
@@ -237,6 +245,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
 }
 #part2_2-1 {
     float: left;
@@ -266,6 +278,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
 }
 #part2_3-1 {
     float: left;
@@ -417,6 +433,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
 }
 #h2-1 {
 	font-size: 30px;
@@ -438,6 +458,10 @@ html,body {
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
 	margin: 20px 0;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
 }
 #up-inner {
 	height: 55px;
@@ -652,6 +676,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
 }
 #dalao1 {
 	opacity: 0;
@@ -659,6 +687,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-o-transition-delay: 1s;
 }
 #mengxin2 {
 	opacity: 0;
@@ -666,6 +698,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 1.5s;
+	-moz-transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
+	-o-transition-delay: 1.5s;
 }
 #dalao2 {
 	opacity: 0;
@@ -673,6 +709,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 2s;
+	-moz-transition-delay: 2s;
+	-webkit-transition-delay: 2s;
+	-o-transition-delay: 2s;
 }
 #mengxin3 {
 	opacity: 0;
@@ -680,6 +720,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 2.5s;
+	-moz-transition-delay: 2.5s;
+	-webkit-transition-delay: 2.5s;
+	-o-transition-delay: 2.5s;
 }
 #dalao3 {
 	opacity: 0;
@@ -687,6 +731,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 3s;
+	-moz-transition-delay: 3s;
+	-webkit-transition-delay: 3s;
+	-o-transition-delay: 3s;
 }
 #mengxin4 {
 	opacity: 0;
@@ -694,6 +742,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 3.5s;
+	-moz-transition-delay: 3.5s;
+	-webkit-transition-delay: 3.5s;
+	-o-transition-delay: 3.5s;
 }
 #dalao4 {
 	opacity: 0;
@@ -701,6 +753,10 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
+	transition-delay: 4s;
+	-moz-transition-delay: 4s;
+	-webkit-transition-delay: 4s;
+	-o-transition-delay: 4s;
 }
 @media screen and (max-width: 454px) {
 	#part5 {
