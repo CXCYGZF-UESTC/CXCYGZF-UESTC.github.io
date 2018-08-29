@@ -31,7 +31,6 @@ function appear_1() {
 	setTimeout("document.getElementById('wenzi2').style.opacity = 1",1000);
 }
 function appear_2() {
-	setTimeout("appear_2()",500);
 	var getId = document.getElementById('part2');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
@@ -42,7 +41,6 @@ function appear_2() {
 	}
 }
 function appear_3() {
-	setTimeout("appear_3()",500);
 	var getId = document.getElementById('part3');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
@@ -55,7 +53,6 @@ function appear_3() {
 	}
 }
 function appear_4() {
-	setTimeout("appear_4()",500);
 	var getId = document.getElementById('part4');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
@@ -63,7 +60,6 @@ function appear_4() {
 	}
 }
 function appear_5() {
-	setTimeout("appear_5()",500);
 	var getId = document.getElementById('part5');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
@@ -80,7 +76,6 @@ function appear_5() {
 	}
 }
 function appear_6() {
-	setTimeout("appear_6()",500);
 	var getId = document.getElementById('part6');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=200) {
