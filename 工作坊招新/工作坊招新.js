@@ -27,31 +27,32 @@ function SME() {
 
 function appear_1() {
 	document.getElementById('WIE2').style.opacity = 1;
-	document.getElementById('wenzi1').style.opacity = 1;
-	document.getElementById('wenzi2').style.opacity = 1;
+	for (var i = 0; i <= 1; i++) {
+		document.getElementsByClassName('wenzi')[i].style.opacity = 1;
+	}
 }
 function appear_2() {
 	var getId = document.getElementById('part2');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
-		document.getElementById('part2-img').style.opacity = 1;
-		document.getElementById('part2_1').style.opacity = 1;
-		document.getElementById('part2_2').style.opacity = 1;
-		document.getElementById('part2_3').style.opacity = 1;
+		for (var i = 0; i <= 3; i++) {
+			document.getElementsByClassName('part2_0')[i].style.opacity = 1;
+		}
 	}
 }
 function appear_3() {
 	var getId = document.getElementById('part3');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
-		document.getElementById('jiao1').style.opacity = 1;
-		document.getElementById('jiao2').style.opacity = 1;
-		document.getElementById('jiao3').style.opacity = 1;
-		document.getElementById('jiao4').style.opacity = 1;
-		document.getElementById('h2-1').style.opacity = 1;
-		document.getElementById('h2-2').style.opacity = 1;
-		document.getElementById('part3-up').style.opacity = 1;
-		document.getElementById('part3-down').style.opacity = 1;
+		for (var i = 0; i <= 3; i++) {
+			document.getElementsByClassName('jiao')[i].style.opacity = 1;
+		}
+		for (var i = 0; i <= 1; i++) {
+			document.getElementsByClassName('h2_0')[i].style.opacity = 1;
+		}
+		for (var i = 0; i <= 1; i++) {
+			document.getElementsByClassName('part3-ud')[i].style.opacity = 1;
+		}		
 	}
 }
 function appear_4() {
@@ -66,24 +67,23 @@ function appear_5() {
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=100) {
 		document.getElementById('QA').style.opacity = 1;
-		document.getElementById('part2_1').style.opacity = 1;
-		document.getElementById('mengxin1').style.opacity = 1;
-		document.getElementById('dalao1').style.opacity = 1;
-		document.getElementById('mengxin2').style.opacity = 1;
-		document.getElementById('dalao2').style.opacity = 1;
-		document.getElementById('mengxin3').style.opacity = 1;
-		document.getElementById('dalao3').style.opacity = 1;
-		document.getElementById('mengxin4').style.opacity = 1;
-		document.getElementById('dalao4').style.opacity = 1;
+		for (var i = 0; i <= 3; i++) {
+			document.getElementsByClassName('mengxin')[i].style.opacity = 1;
+		}
+		for (var i = 0; i <= 3; i++) {
+			document.getElementsByClassName('dalao')[i].style.opacity = 1;
+		}
 	}
 }
 function appear_6() {
 	var getId = document.getElementById('part6');
 	var getTopnumber = getId.getBoundingClientRect().top;
 	if (getTopnumber<=200) {
-		document.getElementById('shangyinhao').style.opacity = 1;
-		document.getElementById('geyan').style.opacity = 1;
-		document.getElementById('xiayinhao').style.opacity = 1;
-		document.getElementById('Hegel').style.opacity = 1;
+		for (var i = 0; i <= 1; i++) {
+			document.getElementsByClassName('yinhao')[i].style.opacity = 1;
+		}
+		for (var i = 0; i <= 1; i++) {
+			document.getElementsByClassName('neirong')[i].style.opacity = 1;
+		}
 	}
 }
