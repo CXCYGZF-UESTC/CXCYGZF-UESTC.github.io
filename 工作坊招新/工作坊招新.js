@@ -77,8 +77,9 @@ function appear_5() {
 }
 function appear_6() {
 	var getId = document.getElementById('part6');
-	var getTopnumber = getId.getBoundingClientRect().top;
-	if (getTopnumber<=200) {
+	var getBottomnumber = getId.getBoundingClientRect().bottom;
+	var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	if (getBottomnumber<=h) {
 		for (var i = 0; i <= 1; i++) {
 			document.getElementsByClassName('yinhao')[i].style.opacity = 1;
 		}
@@ -86,4 +87,14 @@ function appear_6() {
 			document.getElementsByClassName('neirong')[i].style.opacity = 1;
 		}
 	}
+}
+
+function part_height() {
+	var part = ["part1","part2","part3","part4","part4-2"];
+	var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	for (var i = 0; i <= part.length - 1; i++) {
+		var p = part[i];
+		document.getElementById(p).style.height = h + 'px';
+	}
+	document.getElementById('up-inner').style.paddingTop = h/2 - 55 + 'px';
 }

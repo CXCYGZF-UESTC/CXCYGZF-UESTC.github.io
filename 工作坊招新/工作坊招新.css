@@ -136,7 +136,6 @@ html,body {
 	background-position: center;
 	text-align: center;
 	overflow: hidden;
-	height: 850px;
 	color: #fff;
 	font-family: 方正清刻本悦宋简体;
 	font-weight:bold;
@@ -204,16 +203,14 @@ html,body {
     color: white;
 	font-family: 方正清刻本悦宋简体;
 	font-weight:bold;
-	padding-top: 300px;
 	padding-left: 100px;
-	height: 700px;
 	position: relative;
 	overflow: hidden;
 }
 #part2 img {
 	width: 40%;
 	position: absolute;
-	top: 300px;
+	top: 30%;
 	right: 0px;
 	transform:rotate(40deg);
 	-ms-transform:rotate(40deg);
@@ -228,6 +225,7 @@ html,body {
 }
 
 #part2_1 {
+	margin-top: 10%;
     font-size: 65px;
     line-height: 80px;
 	opacity: 0;
@@ -297,7 +295,6 @@ html,body {
 
 @media screen and (max-width: 400px) {
 	#part2 {
-		padding-top: 100px;
 		padding-left: 35px;
 	}
 	#part2 img {
@@ -305,6 +302,7 @@ html,body {
 		width: 60%;
 	}
 	#part2_1 {
+		margin-top: 20%;
 		font-size: 27px;
 		line-height: 45px;
 	}
@@ -339,7 +337,6 @@ html,body {
 }
 @media (min-width: 401px) and (max-width: 900px) {
 	#part2 {
-		padding-top: 100px;
 		padding-left: 50px;
 	}
 	#part2 img {
@@ -347,6 +344,7 @@ html,body {
 		width: 60%;
 	}
 	#part2_1 {
+		margin-top: 20%;
 		font-size: 40px;
 		line-height: 60px;
 	}
@@ -385,7 +383,6 @@ html,body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 900px;
 	font-family: 方正清刻本悦宋简体;
 	position: relative;
 	overflow: hidden;
@@ -398,8 +395,6 @@ html,body {
 	-moz-transition:opacity 1s;
 	-webkit-transition:opacity 1s;
 	-o-transition:opacity 1s;
-}
-.jiao {
 	height: 40%;
 }
 #jiao1 {
@@ -457,7 +452,6 @@ html,body {
 	-moz-transition:opacity 2s;
 	-webkit-transition:opacity 2s;
 	-o-transition:opacity 2s;
-	margin: 20px 0;
 	transition-delay: 1s;
 	-moz-transition-delay: 1s;
 	-webkit-transition-delay: 1s;
@@ -465,7 +459,6 @@ html,body {
 }
 #up-inner {
 	height: 55px;
-	padding-top: 395px;
 }
 #up-inner h1 {
 	line-height: 55px;
@@ -557,9 +550,7 @@ html,body {
 /*part4*/
 #part4 {
 	background-color: black;
-	height: 950px;
 	position: relative;
-	padding-top: 50px;
 	color: white;
 	font-size: 15px;
 	font-family: 方正清刻本悦宋简体;
@@ -573,6 +564,7 @@ html,body {
 }
 .part4-inner {
 	margin: 120px 50px;
+	overflow: auto;
 }
 .part4-line {
 	height: 0px;

@@ -16,9 +16,9 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
     z-index: 1;
-    height: 700px;
+    height: 85%;
+    overflow: hidden;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
