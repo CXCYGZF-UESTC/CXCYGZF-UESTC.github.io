@@ -313,6 +313,7 @@ html,body {
 	#part2_3 {
 		width: 300px;
 		letter-spacing: 2px;
+		margin-bottom: 40px;
 	}
 	#part2_2-1 {
 		margin-top: 50px;
@@ -345,7 +346,7 @@ html,body {
 	}
 	#part2_1 {
 		margin-top: 20%;
-		font-size: 40px;
+		font-size: 35px;
 		line-height: 60px;
 	}
 	#part2_2 {
@@ -355,6 +356,7 @@ html,body {
 	#part2_3 {
 		width: 500px;
 		letter-spacing: 5px;
+		margin-bottom: 45px;
 	}
 	#part2_2-1 {
 		margin-top: 70px;
@@ -371,10 +373,10 @@ html,body {
 		margin-top: 45px;
 	}
 	.class-1 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	.class-2 {
-		font-size: 27px;
+		font-size: 23px;
 	}
 }
 /*part3*/
