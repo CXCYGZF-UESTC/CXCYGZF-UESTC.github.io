@@ -101,5 +101,6 @@ function part_height() {
 		document.getElementById('part2').style.height = h +'px';
 		document.getElementById('part4').style.height = h +'px';
 	}
+	document.getElementById('WIE2').style.paddingTop = h/2 - w*0.05 + 'px';
 	document.getElementById('up-inner').style.paddingTop = h/2 - 55 + 'px';
 }

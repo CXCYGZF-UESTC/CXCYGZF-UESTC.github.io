@@ -141,7 +141,6 @@ html,body {
 	font-weight:bold;
 }
 #WIE2 {
-	padding-top: 300px;
 	width: 30%;
 	opacity: 0;
 	transition-duration:opacity 2s;
