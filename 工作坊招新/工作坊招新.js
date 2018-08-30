@@ -90,11 +90,16 @@ function appear_6() {
 }
 
 function part_height() {
-	var part = ["part1","part2","part3","part4","part4-2"];
+	var part = ["part1","part3","part4-2"];
 	var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 	for (var i = 0; i <= part.length - 1; i++) {
 		var p = part[i];
 		document.getElementById(p).style.height = h + 'px';
+	}
+	var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	if (w>=900) {
+		document.getElementById('part2').style.height = h +'px';
+		document.getElementById('part4').style.height = h +'px';
 	}
 	document.getElementById('up-inner').style.paddingTop = h/2 - 55 + 'px';
 }

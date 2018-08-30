@@ -564,7 +564,6 @@ html,body {
 }
 .part4-inner {
 	margin: 120px 50px;
-	overflow: auto;
 }
 .part4-line {
 	height: 0px;
