@@ -893,17 +893,10 @@ html,body {
 	letter-spacing: 2px;
 	padding-bottom: 20px;
 }
-#part7 img {
-	height: 25px;
-	margin-bottom: -5px;
-}
 @media screen and (max-width: 900px) {
 	#part7 {
 		font-size: 12px;
 		line-height: 20px;
 		padding-bottom: 10px;
-	}
-	#part7 img {
-		height: 18px;
 	}
 }
