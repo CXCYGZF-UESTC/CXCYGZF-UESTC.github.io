@@ -130,7 +130,7 @@ html,body {
 }
 /*part1*/
 #part1 {
-	background-image: url(part1.jpg);
+	background-image: url(../材料文件/part1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -380,7 +380,7 @@ html,body {
 }
 /*part3*/
 #part3 {
-	background-image: url(part3.jpg);
+	background-image: url(../材料文件/part3.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -619,7 +619,7 @@ html,body {
 }
 /*part5*/
 #part5 {
-	background-image: url(part5.jpg);
+	background-image: url(../材料文件/part5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -807,7 +807,7 @@ html,body {
 }
 /*part6*/
 #part6 {
-	background-image: url(格言.jpg);
+	background-image: url(../材料文件/格言.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
