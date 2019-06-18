@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>创新创业工作坊</title>
+    <script src="js/jrj6out.js"></script>
+    <script>
+    try { Typekit.load({ async: false }); } catch (e) {}
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="getNowDate()">
+    <script type="text/javascript">
+    function getNowDate() {
+        var date = new Date();
+        var year = date.getFullYear() // 年
+        var month = date.getMonth() + 1; // 月
+        var day = date.getDate(); // 日
+        // 给一位数数据前面加 “0”
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (day >= 0 && day <= 9) {
+            day = "0" + day;
+        }
+        document.getElementById("nowyear").innerHTML = year;
+        document.getElementById("nowmonth").innerHTML = month;
+        document.getElementById("nowday").innerHTML = day;
+    }
+    </script>
+    <div class="x-mark">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div class="intro-container">
+        <h1>欢迎大家来到创新创业工作坊</h1>
+        <h1>来跟我们一起进入这个奇妙的世界</h1>
+        <div class="button shift-camera-button">
+            <div class="border">
+                <div class="left-plane"></div>
+                <div class="right-plane"></div>
+            </div>
+            <div class="text">To The Stars</div>
+        </div>
+    </div>
+    <div class="sky-container">
+        <div class="text-right sky-container__left">
+            <h2 class="portfolio">
+			WIE
+		</h2>
+            <h2 class="resurrection">
+			CXCYGZF	
+		</h2>
+        </div>
+        <div class="text-left sky-container__right">
+            <h2 class="08" id="nowyear"></h2>
+            <h2 class="thirty-one" id="nowmonth"></h2>
+            <h2 class="2016" id="nowday"></h2>
+            <button>
+                <a href="工作坊招新/工作坊招新.html" class="enterhtml" style="font-family: 方正清刻本悦宋简体;letter-spacing: 5px;"><b>ENTER</b></a>
+            </button>
+        </div>
+    </div>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/TweenMax.min.js'></script>
+    <script src='js/three.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
