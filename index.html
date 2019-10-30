@@ -1,75 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>创新创业工作坊</title>
-    <script src="js/jrj6out.js"></script>
-    <script>
-    try { Typekit.load({ async: false }); } catch (e) {}
-    </script>
-    <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>前端开发经验分享</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
 </head>
 
-<body onload="getNowDate()">
-    <script type="text/javascript">
-    function getNowDate() {
-        var date = new Date();
-        var year = date.getFullYear() // 年
-        var month = date.getMonth() + 1; // 月
-        var day = date.getDate(); // 日
-        // 给一位数数据前面加 “0”
-        if (month >= 1 && month <= 9) {
-            month = "0" + month;
-        }
-        if (day >= 0 && day <= 9) {
-            day = "0" + day;
-        }
-        document.getElementById("nowyear").innerHTML = year;
-        document.getElementById("nowmonth").innerHTML = month;
-        document.getElementById("nowday").innerHTML = day;
-    }
-    </script>
-    <div class="x-mark">
-        <div class="container">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-    </div>
-    <div class="intro-container">
-        <h1>欢迎大家来到创新创业工作坊</h1>
-        <h1>来跟我们一起进入这个奇妙的世界</h1>
-        <div class="button shift-camera-button">
-            <div class="border">
-                <div class="left-plane"></div>
-                <div class="right-plane"></div>
+<body style="background-color:rgba(215,196,187,1);">
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="6" src="//music.163.com/outchain/player?type=3&amp;id=2061995131&amp;auto=1&amp;height=66"></iframe>
+<div class="vi">
+    <div class="sidebar">
+        <div class="header">
+            <h1>高 浩峻</h1>
+            <div class="quote">
+                <p class="quote-text animate-init">为天地立心，为生民立命，为往圣继绝学，为万世开太平。</p>
+                <p class="quote-author animate-init"> —— <strong>张载《横渠语录》</strong></p>
+                <p class="quote-text animate-init">To ordain conscience for Heaven and Earth;&nbsp&nbsp</p>
+                <p class="quote-text animate-init">To secure life and fortune for the people;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="quote-text animate-init">To continue lost teachings for past sages;&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                <p class="quote-text animate-init">To establish peace for all future generations.</p>
+                <p class="quote-author animate-init"> —— <strong>Zhangzi Quanshu</strong></p>
             </div>
-            <div class="text">To The Stars</div>
+        </div>
+        <div class="menu">
+            <a href="https://github.com/VincentGaoHJ" class="animate-init">GitHub</a>
+            <a href="https://gaohaojun.cn/markdown-cv/" class="animate-init">CV/Resume</a>
+            <a href="web_preemption/preemption.html" class="animate-init">Preemption</a>
+            <p>
+                <a href="https://vincentgaohj.github.io/Blog/" class="animate-init">
+                    Personal&nbsp;Study&nbsp;Notes&nbsp; about &nbsp;Data&nbsp;Science&nbsp; and &nbsp;Finance
+                </a>
+            </p>
+        </div>
+        <div class="location">
+            <i class="location-icon"></i>
+            <span class="location-text animate-init">BeiJing - China <br>蜀 ICP 备 18024794 号</span>
+        </div>
+        <div class="relocating">
+            Navigating to: <span class="relocate-location"></span>...
         </div>
     </div>
-    <div class="sky-container">
-        <div class="text-right sky-container__left">
-            <h2 class="portfolio">
-			WIE
-		</h2>
-            <h2 class="resurrection">
-			CXCYGZF	
-		</h2>
-        </div>
-        <div class="text-left sky-container__right">
-            <h2 class="08" id="nowyear"></h2>
-            <h2 class="thirty-one" id="nowmonth"></h2>
-            <h2 class="2016" id="nowday"></h2>
-            <button>
-                <a href="工作坊招新/工作坊招新.html" class="enterhtml" style="font-family: 方正清刻本悦宋简体;letter-spacing: 5px;"><b>ENTER</b></a>
-            </button>
-        </div>
-    </div>
-    <script src='js/jquery.min.js'></script>
-    <script src='js/TweenMax.min.js'></script>
-    <script src='js/three.min.js'></script>
-    <script src="js/index.js"></script>
-</body>
 
+    <div class="content">
+        <span class="close">close</span>
+    </div>
+</div>
+<script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
+<script>
+    $(document).ready(function () {
+        var delay = 1;
+        var DELAY_STEP = 200;
+        var animationOptions = { opacity: 1, top: 0};
+
+        $('h1').animate(animationOptions).promise()
+                .pipe(animateMain)
+                .pipe(animateLocationIcon);
+
+        function animateMain() {
+            var dfd = $.Deferred();
+            var els = $('.animate-init');
+            var size = els.size();
+
+            els.each(function (index, el) {
+                delay++;
+                $(el).delay(index * DELAY_STEP)
+                        .animate(animationOptions);
+                (size - 1 === index) && dfd.resolve();
+            });
+            return dfd.promise();
+        }
+
+        function animateLocationIcon() {
+            $('.location-icon').delay(delay * DELAY_STEP).animate({
+                opacity: 1,
+                top: 0
+            }).promise().done(animationQuote);
+        }
+
+        function animationQuote() {}
+
+        $(document.body).on('keydown', function (event) {
+            // Press 'b' key
+            if (event.which === 66) {
+                $('.relocate-location').text('Bookmark Page');
+                $('.relocating').css('opacity', 1);
+
+                window.setTimeout(function () {
+                    window.location.href = '/bookmarks.html';
+                }, 1000);
+            }
+        });
+    });
+</script>
+</body>
 </html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>数据科学进阶题·首页</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,400,300,500,600" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<div class="container">
+				<div class="header-wrap">
+					<div class="header-top d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="preemption.html"><img src="img/icon.png" alt=""></a>
+						</div>
+						<div class="main-menubar d-flex align-items-center">
+							<nav class="hide">
+								<a href="preemption.html">Home</a>
+								<a href="tutorials.html">Tutorials</a>
+								<a href="https://www.zybuluo.com/Vincent-Gao/note/1276738">API</a>
+							</nav>
+							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header Area -->
+		<!-- Start Banner Area -->
+		<section class="banner-area relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row fullscreen align-items-center justify-content-center">
+					<div class="col-lg-12">
+						<div class="banner-content">
+							<h1>攻城略地 Preemption<br>数据科学进阶题</h1>
+							<p class="text-white">第二届 SME杯 / 创新创业工作坊 · 电子科技大学</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Banner Area -->
+		<!-- Start Exprience Area -->
+		<section class="section-gap exprience-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6">
+						<div class="exprience-thumb" style="background: url(img/mapChina.png);"></div>
+					</div>
+					<div class="col-lg-6">
+						<div class="exprience-content">
+							<h2>这是一款使用程序以 <br> 自动抢占领地的游戏</h2>
+							<h6 class="sub-exprience-title">我们提供这样一个游戏对战平台，游戏地图为中国地图，每个省为一个城堡，城堡所在省份实际大小即为控制领地大小，城堡与城堡之间有相生相克的关系（生克本质相同，A“生”B 即为 B被A“克”）。<br><br>
+							游戏双方先后占领未被双方占领的任意城堡，占领后所有被此城堡克的城堡（也就是这个城堡生的城堡）成为本方城堡（无论此城堡之前状态）。当所有城堡均被占领后，本局游戏结束。<br><br>
+							所获分数为己方占领地盘大小减去敌方占领地盘大小。</h6>
+							<p>而且每一局城堡间相生相克关系是变化的。所以参与本题的同学需要设计一套算法来实现自动落子。</p>
+							<a href="#" class="primary-btn">View Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Exprience Area -->
+		<!-- Start Service Area -->
+		<section class="carousel-area section-gap relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-lg-6 col-md-9 relative">
+						<div class="active-exprience-carousel">
+							<div class="item">
+								<h3>比如省份名称，省份代码，所对应的实际大小：</h3>
+                                <table border="1">
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>行政单位名称</th>
+                                        <th>地名代号</th>
+                                        <th>占地面积（万平方米）</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>安徽省</td>
+                                        <td>Anhui</td>
+                                        <td>13.97</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>澳门特别行政区</td>
+                                        <td>Macao</td>
+                                        <td>0.00328</td>
+                                    </tr>
+                                </table>
+							</div>
+							<div class="item">
+								<h3>由于每一局的相生相克规则是不一样的，例如：</h3>
+								<p>
+								Shandong ==> Macao（山东 “生” 澳门）<br>
+								Zhejiang ==> Hong_Kong（浙江 “生” 香港）<br>
+								Gansu ==> Hong_Kong<br>
+								Beijing ==> Hubei<br>
+								Hong_Kong ==> Hunan<br>
+								Tianjin ==> Jilin
+								</p>
+							</div>
+							<div class="item">
+								<h3>注意事项</h3>
+								<p>	评分项目中完成与服务器的交互为硬性指标，也就是完成某项即获得某项的所有分数。<br>	设计算法并且拿到高分这一部分，后期会根据参赛本题人员最终结果以及与其他题目难度比较进行小幅度的调整，以及对区间内分数进行给分（300分的最终得分会高于250分）<br>	代码，算法以及报告部分根据完成情况而定。
+</p>
+							</div>
+						</div>
+						<div class="carousel-trigger">
+							<div class="next-trigger"><span class="lnr lnr-arrow-right"></span></div>
+							<div class="prev-trigger"><span class="lnr lnr-arrow-left"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Service Area -->
+		<!-- Start Projects Area -->
+		<section class="service-area">
+            <!--
+            <div style="width:100%; text-align:center;">
+                <img src=img/map_1.png border=0>
+                <img src=img/map_2.png border=0>
+                <img src=img/map_3.png border=0>
+                <img src=img/map_4.png border=0>
+            </div>
+            -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				        <div style="width:100%; text-align:center;">
+                            <img src=img/map_1.png border=0>
+                        </div>
+						<div class="single-service d-flex flex-column align-items-center">
+							<div class="desc mt-30">
+								<h4 class="mb-10">ROUND ONE</h4>
+								<p>游戏初始状态为空白的中国地图，游戏在机器人（蓝方）与参与本题的同学（红方）中展开</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					    <div style="width:100%; text-align:center;">
+                            <img src=img/map_2.png border=0>
+                        </div>
+						<div class="single-service d-flex flex-column align-items-center">
+							<div class="desc mt-30">
+								<h4 class="mb-10">ROUND TWO</h4>
+								<p>蓝方，也就是电脑先行占领城堡，假设它选择了北京，然而根据相生相克规则，北京又“生”新疆与安徽，那么战况如上<br><br><br><br></p>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					    <div style="width:100%; text-align:center;">
+                            <img src=img/map_3.png border=0>
+                        </div>
+						<div class="single-service d-flex flex-column align-items-center">
+							<div class="desc mt-30">
+								<h4 class="mb-10">ROUND THREE</h4>
+								<p>红方，也就是参赛选手选择了宁夏，根据相生相克规则，宁夏又“生”海南与新疆，那么战况变更为如上</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					    <div style="width:100%; text-align:center;">
+                            <img src=img/map_4.png border=0>
+                        </div>
+						<div class="single-service d-flex flex-column align-items-center">
+							<div class="desc mt-30">
+								<h4 class="mb-10">ROUND FOUR</h4>
+								<p>当所有城堡均被占领后，游戏结束，最终如上。此时进入清算环节，注意，比赛比的是哪方占领的城堡对应的领地总大小，而不是城堡数量</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Start Projects Area -->
+		<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+		<!-- Start Video Area -->
+		<section class="video-area section-gap relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-5">
+						<div class="video-wrap" style="background: url(img/video-bg.png);">
+							<div class="overlay overlay-bg"></div>
+							<a href="https://CXCYGZF-UESTC.github.io" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="video-content">
+							<h3 class="text-white">本题采用中国地图目的是为了方便大家熟悉地图中的元素</h3>
+							<p class="text-white">本题采用中国地图目的是为了方便大家熟悉地图中的元素，减少地图带来的题目难度，没有任何政治目的以及地域性目的，请同学们不要上纲上线，让我们一同坚持一个中国原则并且坚持中国主权和领土完整。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Video Area -->
+		<!-- Start Projects Area -->
+		<section class="service-area-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-service d-flex justify-content-between align-items-center">
+							<div class="icon">
+								<span class="lnr lnr-screen"></span>
+							</div>
+							<div class="desc">
+								<h4 class="mb-10">Basic Requirements</h4>
+								<p>	基础要求无需从服务器端获取到图片可视化信息。<br>
+									完成与服务器的交互并且自动获取到相生相克规则。<br>
+									与电脑对战一局，并且获得最终分数。<br>
+									实现自动对战500盘，并且计算出平均得分。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-service d-flex justify-content-between align-items-center">
+							<div class="icon">
+								<span class="lnr lnr-picture"></span>
+							</div>
+							<div class="desc">
+								<h4 class="mb-10">Advanced Requirements</h4>
+								<p>	基础要求对得分没有要求。<br>
+									扩展要求希望大家能够尽可能的设计算法以取得高分。<br>
+									从服务器端获取到可视化界面，完整和服务器对战一局。<br>
+									并且获得完整流程的可视化对战情况（从空白到游戏结束）。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-service d-flex justify-content-between align-items-center">
+							<div class="icon">
+								<span class="lnr lnr-laptop-phone"></span>
+							</div>
+							<div class="desc">
+								<h4 class="mb-10">Innovative Bonus</h4>
+								<p>若参赛组完成了基础要求和拓展要求以外的内容，可根据难度和创新性适当加分，以下仅提供一些创新性思路以供参考。<br>
+                                    	对题目设定提出建设性的改进意见。<br>
+                                    	指出游戏的逻辑漏洞或者是程序漏洞。<br>
+                                    	对题目所涉及到的数理知识进行严谨论述。<br>
+                                    	与电脑进行大量对战并且进行数据分析。
+                                </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Start Projects Area -->
+		<!-- Start Contact Area -->
+		<section class="section-gap contact-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-md-5">
+						<div class="contact-address">
+							<div class="single-address d-flex">
+								<div class="icon">
+									<span class="lnr lnr-pushpin"></span>
+								</div>
+								<div class="desc">
+									<h5>Address</h5>
+									<p>A404，经管楼（科研三号楼），电子科技大学，四川省</p>
+								</div>
+							</div>
+							<div class="single-address mt-30 d-flex">
+								<div class="icon">
+									<span class="lnr lnr-earth"></span>
+								</div>
+								<div class="desc">
+									<h5>Email Address</h5>
+									<a href="mailto:demo@gmail.com">2016110902023@std.uestc.edu.cn</a> <br>
+									<a href="mailto:demo@gmail.com">gaohaojun980707@sina.com</a>
+								</div>
+							</div>
+							<div class="single-address mt-30 d-flex">
+								<div class="icon">
+									<span class="lnr lnr-phone"></span>
+								</div>
+								<div class="desc">
+									<h5>Phone Number</h5>
+									<a href="tel:13701062275">137-0106-2275</a> <br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 ml-auto col-md-0">
+					   <div style="width:100%; text-align:center;">
+                            <img src=img/requirements.png border=0>
+                        </div>
+                        <!--
+						<form id="myForm" action="mail.php" method="post" class="contact-form text-right">
+							<input type="text" name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required>
+							<input type="email" name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required>
+							<textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required></textarea>
+							<button class="primary-btn white-bg d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
+							<div class="alert-msg"></div>
+						</form>
+						-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Start Contact Area -->
+
+		<!-- Strat Footer Area -->
+		<footer class="section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">About Me</h6>
+							<ul class="footer-nav">
+							    <li><a href="https://github.com/CXCYGZF-UESTC/SME_2018">SME Cup</a></li>
+								<li><a href="VincentGaoHJ.github.io">My Website</a></li>
+								<li><a href="CXCYGZF-UESTC.github.io">My Organization</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-lg-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">Newsletter</h6>
+							<p class="mb-0 text-white">You can trust us. we only send promo offers, not a single spam.</p>
+							<div id="mc_embed_signup">
+								<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription d-flex justify-content-between">
+									<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+									<div style="position: absolute; left: -5000px;">
+										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+									</div>
+									<button class="primary-btn white-bg d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></button>
+									<div class="info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">Instafeed</h6>
+							<ul class="instafeed d-flex flex-wrap">
+								<li><img src="img/i1.jpg" alt=""></li>
+								<li><img src="img/i2.jpg" alt=""></li>
+								<li><img src="img/i3.jpg" alt=""></li>
+								<li><img src="img/i4.jpg" alt=""></li>
+								<li><img src="img/i5.jpg" alt=""></li>
+								<li><img src="img/i6.jpg" alt=""></li>
+								<li><img src="img/i7.jpg" alt=""></li>
+								<li><img src="img/i8.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					-->
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+				    
+                    <p class="footer-text m-0 ">Copyright &copy; 2018 All rights reserved</p>
+					<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
