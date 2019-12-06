@@ -50,15 +50,12 @@ function appear_6() {
 function part_height() {
 	var part = ["part1","part3","part4-2"];
 	var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-	var h4 = document.getElementsByClassName('appear_4')[0].offsetHeight;
-	console.log('1');console.log(h4);
 	for (var i = 0; i <= part.length - 1; i++) {
 		var p = part[i];
 		document.getElementById(p).style.height = h + 'px';
 	}
-	var h4 = document.getElementsByClassName('appear_4')[0].offsetHeight;
-	console.log('2');console.log(h4);
 	var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	var h4 = document.getElementsByClassName('appear_4')[0].offsetHeight;
 	if (w>=900) {
 		document.getElementById('part2').style.height = h +'px';
 		if (h4>=h) {
@@ -68,8 +65,6 @@ function part_height() {
 			document.getElementById('part4').style.height = h +'px';
 		}
 	}
-	var h4 = document.getElementsByClassName('appear_4')[0].offsetHeight;
-	console.log('3');console.log(h4);
 	document.getElementById('WIE2').style.paddingTop = h/2 - w*0.05 + 'px';
 	document.getElementById('up-inner').style.paddingTop = h/2 - 55 + 'px';
 }
